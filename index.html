@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Panos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="landing-content">
+            <img src="andrew-panos.jpg" alt="Andrew Panos Image" class="profile-pic">
+            <h1>Andrew Panos</h1>
+            <p>Previous SDE Intern @ McDonald's | Northeastern CS</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/panosandrew" target="_blank">
+                    <img src="logos/linkedin-logo.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/andrewpanos" target="_blank">
+                    <img src="logos/github-logo.png" alt="GitHub">
+                </a>
+                <a href="mailto:andrew_panos@me.com">
+                    <img src="logos/email-logo.png" alt="Email">
+                </a>
+                <a href="Panos Resume.pdf" download>
+                    <img src="logos/resume.png" alt="Download Resume" class="resume-logo">
+                </a>
+            </div>
+            <div class="scroll-arrow">
+                <a href="#education">
+                    <img src="logos/down-arrow.png" alt="Scroll Down">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="vscode-container">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="button close" title="Close"></div>
+                <div class="button minimize" title="Minimize"></div>
+                <div class="button expand" title="Expand"></div>
+            </div>
+            <!-- Header Bar -->
+            <div class="header-bar">
+                <div class="tab">
+                    <span class="info-icon" title="Information about this file">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#3b82f6">
+                            <circle cx="12" cy="12" r="10" stroke="#519aba" stroke-width="2" fill="none"></circle>
+                            <text x="12" y="16" text-anchor="middle" font-size="14" fill="#519aba" font-family="Times New Roman" font-weight="bold">i</text>
+                        </svg>
+                    </span>
+                    README.md
+                </div>
+            </div>
+            
+            <!-- Main Editor Area -->
+            <div class="editor">
+                <!-- Raw Markdown Editor -->
+                <div class="editor-pane raw-markdown">
+                    <pre id="typing-area"></pre>
+                </div>
+                
+                <!-- Markdown Preview -->
+                <div class="editor-pane preview-markdown">
+                    <div id="markdown-preview"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="bounding-box">
+            <div class="content">
+                <div class="education">
+                    <div class="details">
+                        <div class="header">
+                            <h3>Northeastern University – Khoury College of Computer Sciences</h3>
+                        </div>
+                        <div class="sub-header">
+                            <p class="degree">Bachelor of Science in Computer Science</p>
+                        </div>
+                        <div class="bubbles">
+                            <span class="location bubble">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75S13.52 11.75 12 11.75z"></path>
+                                </svg>
+                                Boston, MA
+                            </span>
+                            <span class="date bubble">Sep 2021 – Dec 2024</span>
+                        </div>
+                        <div class="education-details">
+                            <p><strong>Achievements & Accolades:</strong> GPA 3.92/4.00, Dean’s List Scholar</p>
+                            <p><strong>Relevant Coursework:</strong> Algorithms & Data Structures, Object-Oriented Design, Software Engineering,
+                                Artificial Intelligence, Foundations of Data Science, Database Design, Theory of Computation, Computer
+                                Systems, Programming in C++, Programming Languages, Network Fundamentals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+    
+        <!-- McDonald's Experience -->
+        <div class="bounding-box">
+            <div class="content">
+                <div class="experience">
+                    <a href="https://www.mcdonalds.com" target="_blank">
+                        <img src="logos/mcdonalds-logo.png" alt="McDonald's Logo">
+                    </a>
+                    <div class="details">
+                        <h3>Software Development Engineer Intern</h3>
+                        <div class="header">
+                            <p class="company">McDonald’s</p>
+                            <span class="location bubble">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75S13.52 11.75 12 11.75z"></path>
+                                </svg>
+                                Chicago, IL
+                            </span>
+                            <p class="date bubble">Jun 2024 – Aug 2024</p>
+                        </div>
+                        <div class="experience-details">
+                            <p>Overhauled end-to-end testing suite for thousands of point-of-sale terminals by integrating Cypress Cloud Test Replay, providing video recordings of test failures to accelerate bug resolution time.</p>
+                            <p>Diagnosed and resolved MongoDB and Node.js service issues within the testing environment by configuring AWS EC2 boot scripts and reimaging Docker containers, eliminating CI/CD pipeline failures.</p>
+                            <p>Launched 30+ EC2 virtual lab instances to identify and troubleshoot Cypress test failures.</p>
+                        </div>
+                        <div class="skills-bubbles">
+                            <span class="bubble">Test Automation</span>
+                            <span class="bubble">
+                                <a href="#cypress" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Cypress</a>
+                            </span>
+                            <span class="bubble">MongoDB</span>
+                            <span class="bubble">
+                                <a href="#nodejs" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Node.js</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Verizon Experience -->
+        <div class="bounding-box">
+            <div class="content">
+                <div class="experience">
+                    <a href="https://www.verizon.com" target="_blank">
+                        <img src="logos/verizon-logo.png" alt="Verizon Logo">
+                    </a>
+                    <div class="details">
+                        <h3>5G Engineering Co-Op</h3>
+                        <div class="header">
+                            <p class="company">Verizon</p>
+                            <span class="location bubble">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75S13.52 11.75 12 11.75z"></path>
+                                </svg>
+                                Rolling Meadows, IL
+                            </span>
+                            <p class="date bubble">Jan 2024 – Jun 2024</p>
+                        </div>
+                        <div class="experience-details">
+                            <p>Engineered an automated project tracking platform for the System Performance (SP) team, monitoring 700+ cell sites and enabling comprehensive tracking of all movements within yearly forecasts.</p>
+                            <p>Calculated deviations between initial and current project forecasts and integrated Tableau to visualize real-time insights into progress and forecast accuracy, optimizing project management processes.</p>
+                            <p>Designed a scalable ETL workflow using SQL and pandas to process tens of thousands of rows from Google Cloud Platform, generating daily status reports for SP engineers.</p>
+                        </div>
+                        <div class="skills-bubbles">
+                            <span class="bubble">System Performance</span>
+                            <span class="bubble">
+                                <a href="#python" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Python</a>
+                            </span>
+                            <span class="bubble">
+                                <a href="#pandas" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Pandas</a>
+                            </span>
+                            <span class="bubble">
+                                <a href="#sql" class="scroll-to-skill" style="text-decoration: none; color: inherit;">SQL</a>
+                            </span>
+                            <span class="bubble">
+                                <a href="#gcp" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Google Cloud Platform</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Teaching Assistant Experience -->
+        <div class="bounding-box">
+            <div class="content">
+                <div class="experience">
+                    <a href="https://www.khoury.northeastern.edu" target="_blank">
+                        <img src="logos/northeastern-logo.png" alt="Northeastern Logo">
+                    </a>
+                    <div class="details">
+                        <h3>Teaching Assistant for Fundamentals of Computer Science 1</h3>
+                        <div class="header">
+                            <p class="company">Northeastern University</p>
+                            <span class="location bubble">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75S13.52 11.75 12 11.75z"></path>
+                                </svg>
+                                Boston, MA
+                            </span>
+                            <p class="date bubble">Sep 2023 – Dec 2023</p>
+                        </div>
+                        <div class="experience-details">
+                            <p>Supported professors and engaged with 600+ students through office hours, grading, and lab sessions.</p>
+                            <p>Introduced students, many with no prior programming experience, to the foundational principles of programming.</p>
+                        </div>
+                        <div class="skills-bubbles">
+                            <span class="bubble">Racket</span>
+                            <span class="bubble">Teaching</span>
+                            <span class="bubble">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+    
+        <!-- EV Route Planner -->
+        <div class="bounding-box">
+            <div class="content">
+                <div class="project">
+                    <div class="details">
+                        <h3>EV Route Planner</h3>
+                        <p class="date bubble">Nov 2023 – Dec 2023</p>
+                        <div class="project-details">
+                            <p>Created an A*-based route-planning algorithm for electric vehicles, formulating a custom heuristic factoring in battery range, charging station distance, and minimizing detours to ensure efficient route selection.</p>
+                            <p>Integrated a networkx directed graph with real-time Google Maps and NREL API data to visualize routes based on vehicle specifications and charging thresholds.</p>
+                        </div>
+                        <div class="skills-bubbles">
+                            <span class="bubble">
+                                <a href="#python" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Python</a>
+                            </span>
+                            <span class="bubble">networkx</span>
+                            <span class="bubble">Google Maps API</span>
+                            <span class="bubble">NREL API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- BetterSheet -->
+        <div class="bounding-box">
+            <div class="content">
+                <div class="project">
+                    <div class="details">
+                        <h3>BetterSheet</h3>
+                        <p class="date bubble">Oct 2023 – Dec 2023</p>
+                        <div class="project-details">
+                            <p>Built a dynamic spreadsheet application, complete with cell references, formulas, multi-sheet management, CSV/Excel import/export, and undo/redo capabilities.</p>
+                            <p>Applied the observer design pattern to manage cell dependencies and updates, preventing circular references, and developed an expression parser using the state design pattern for handling complex formulas.</p>
+                            <p>Implemented Agile best practices using GitHub for version control and integrating a CI/CD pipeline to streamline development, achieving over 90% test coverage with Jest for synchronous and asynchronous testing.</p>
+                        </div>
+                        <div class="skills-bubbles">
+                            <span class="bubble">
+                                <a href="#ts" class="scroll-to-skill" style="text-decoration: none; color: inherit;">TypeScript</a>
+                            </span>
+                            <span class="bubble">
+                                <a href="#react" class="scroll-to-skill" style="text-decoration: none; color: inherit;">React</a>
+                            </span>
+                            <span class="bubble">
+                                <a href="#nodejs" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Node.js</a>
+                            </span>
+                            <span class="bubble">
+                                <a href="#docker" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Docker</a>
+                            </span>
+                            <span class="bubble">Jest</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Image Processor -->
+        <div class="bounding-box">
+            <div class="content">
+                <div class="project">
+                    <div class="details">
+                        <h3>Image Processor</h3>
+                        <p class="date bubble">Nov 2022 – Dec 2022</p>
+                        <div class="project-details">
+                            <p>Collaborated with a partner using Git and pair-programming techniques to design and develop an image manipulation tool, utilizing the Model-View-Controller architectural pattern and command design pattern.</p>
+                            <p>Delivered a tool that supports loading/saving images via a Swing GUI, text-based scripts, and command-line arguments, with editing operations including color channel adjustments, filtering, transformations, and visual effects.</p>
+                        </div>
+                        <div class="skills-bubbles">
+                            <span class="bubble">
+                                <a href="#java" class="scroll-to-skill" style="text-decoration: none; color: inherit;">Java</a>
+                            </span>
+                            <span class="bubble">Swing</span>
+                            <span class="bubble">JUnit</span>
+                            <span class="bubble">Javadoc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+    
+        <div class="skills-category">
+            <h3>Languages</h3>
+            <div class="skills-grid">
+                <div class="skill" id="python">
+                    <img src="logos/python.png" alt="Python">
+                </div>
+                <div class="skill" id="java">
+                    <img src="logos/java.png" alt="Java">
+                </div>
+                <div class="skill" id="js">
+                    <img src="logos/js.png" alt="JavaScript">
+                </div>
+                <div class="skill" id="ts">
+                    <img src="logos/ts.png" alt="TypeScript">
+                </div>
+                <div class="skill" id="c">
+                    <img src="logos/c.png" alt="C">
+                </div>
+                <div class="skill" id="cpp">
+                    <img src="logos/cpp.png" alt="C++">
+                </div>
+                <div class="skill" id="sql">
+                    <img src="logos/sql.png" alt="SQL">
+                </div>
+                <div class="skill" id="r">
+                    <img src="logos/r.png" alt="R">
+                </div>
+            </div>
+        </div>
+    
+        <div class="skills-category">
+            <h3>Frameworks</h3>
+            <div class="skills-grid">
+                <div class="skill" id="react">
+                    <img src="logos/react.png" alt="React">
+                </div>
+                <div class="skill" id="nodejs">
+                    <img src="logos/nodejs.png" alt="Node.js">
+                </div>
+                <div class="skill" id="express">
+                    <img src="logos/express.png" alt="Express.js">
+                </div>
+                <div class="skill" id="pandas">
+                    <img src="logos/pandas.svg" alt="pandas">
+                </div>
+                <div class="skill" id="numpy">
+                    <img src="logos/numpy.svg" alt="NumPy">
+                </div>
+                <div class="skill" id="scikit">
+                    <img src="logos/scikit.png" alt="scikit-learn">
+                </div>
+            </div>
+        </div>
+    
+        <div class="skills-category">
+            <h3>Testing & Tools</h3>
+            <div class="skills-grid">
+                <div class="skill" id="git">
+                    <img src="logos/git.png" alt="Git">
+                </div>
+                <div class="skill" id="bash">
+                    <img src="logos/bash.svg" alt="Unix CLI">
+                </div>
+                <div class="skill" id="aws">
+                    <img src="logos/aws.png" alt="AWS">
+                </div>
+                <div class="skill" id="gcp">
+                    <img src="logos/gcp.svg" alt="GCP">
+                </div>
+                <div class="skill" id="docker">
+                    <img src="logos/docker.png" alt="Docker">
+                </div>
+                <div class="skill" id="cypress">
+                    <img src="logos/cypress.png" alt="Cypress">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Andrew Panos. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
